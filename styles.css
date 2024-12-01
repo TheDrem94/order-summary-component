@@ -1,0 +1,137 @@
+:root {
+    --clr-primary-pale-blue: hsl(225, 100%, 94%);
+    --clr-primary-bright-blue: hsl(245, 75%, 52%);
+    --clr-primary-bright-blue-hover: hsl(245, 58%, 57%);
+
+    --clr-neutral-pale-blue: hsl(225, 100%, 98%);
+    --clr-neutral-des-blue: hsl(224, 23%, 55%);
+    --clr-neutral-dark-blue: hsl(223, 47%, 23%);
+
+    --fw-small: 500;
+    --fw-regular: 700;
+    --fw-bold: 900;
+}
+
+body {
+    font-family: "Red Hat Display";
+    padding: 2rem;
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    max-width: 375px;
+}
+
+.content {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.header {
+    text-align: center;
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral-dark-blue);
+}
+
+.text {
+    text-align: center;
+    font-weight: var(--fw-small);
+    color: var(--clr-neutral-des-blue);
+}
+
+.price-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: var(--clr-neutral-pale-blue);
+    border-radius: 0.75rem;
+}
+
+/*plan and price align*/
+.aling {
+    position: absolute;
+}
+
+/*price box styling*/
+.price-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.plan { 
+    display: flex;
+    justify-content: center;
+    font-weight: var(--fw-regular);
+    color: var(--clr-neutral-dark-blue)
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    color: var(--clr-neutral-des-blue);
+    font-weight: var(--fw-small);
+}
+
+.change {
+    display: flex;
+    justify-content: end;
+    color: var(--clr-primary-bright-blue);
+    font-weight: var(--fw-regular);
+    text-decoration: underline;
+}
+
+.change:hover {
+    cursor: pointer;
+    color: var(--clr-neutral-des-blue);
+    text-decoration: none;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    background-color: var(--clr-primary-bright-blue);
+    color: var(--clr-neutral-pale-blue);
+    font-weight: var(--fw-bold);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    min-width: 19.55rem;
+}
+
+.button:hover  {
+    cursor: pointer;
+    background-color: var(--clr-primary-bright-blue-hover);
+}
+
+.cancel {
+    display: flex;
+    color: var(--clr-neutral-des-blue);
+    justify-content: center;
+    font-weight: var(--fw-bold);
+}
+
+.cancel:hover  {
+    cursor: pointer;
+    color: var(--clr-neutral-dark-blue);
+}
+
+/*media querry*/
+
+@media (min-width: 42em) {
+    body {
+        display: flex;
+        justify-content: center;
+        background-image: url(/images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
